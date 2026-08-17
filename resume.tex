@@ -1,0 +1,219 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+% \usepackage{times}
+
+\usepackage[cmintegrals,cmbraces]{newtxmath}
+\usepackage{ebgaramond-maths}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{nohyperpage}
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+  \begin{tabular}[t]{@{}l@{}}
+    \textbf{\Huge Emre Kerman} \\ \vspace{2pt}
+    {\large\textit{Computer Engineer}} \\ \vspace{1pt}
+    \small İzmir, Turkey
+  \end{tabular} & 
+  \begin{tabular}[t]{r@{}}
+    \small +90 541 264 0344 \\
+    \href{mailto:emrekerman02@gmail.com}{\underline{emrekerman02@gmail.com}} \\
+    \href{https://github.com/emrekerman}{\underline{github.com/emrekerman}} \\
+    \href{https://linkedin.com/in/emrekerman}{\underline{linkedin.com/in/emrekerman}}
+  \end{tabular}
+\end{tabularx}
+\end{nohyperpage}
+\vspace{-10pt}
+
+
+\section{Summary}
+    I'm a computer engineer from İzmir, freshly graduated from Dokuz Eylül University, who loves linux and open-source software.
+
+Experienced in software development, machine learning, and embedded systems, with hands-on experience in IoT, computer vision, web technologies, both frontend and backend development. Always eager to learn new technologies and contributing.
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dokuz Eylül University}{Izmir, Turkey}
+      {Bachelor of Science in Computer Engineering}{2021 -- 2025}
+    \resumeSubheading
+      {Yunus Emre Anadolu Lisesi}{Izmir, Turkey}
+      {High School Diploma}{2018 -- 2021}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software \& IoT Engineering Intern}{June 2025 -- Sept. 2025}
+      {Indas Teknoloji Ticaret AŞ.}{Izmir, Turkey}
+      \resumeItemListStart
+        \resumeItem{Engineered a smart parking platform with ESP32-CAM nodes and OCR (PaddleOCR/Tesseract) for automated entry tracking, billing, and balance management via Next.js REST APIs.}
+        \resumeItem{Built an edge-first PPE and human detection system running quantized FOMO models on ESP32-CAM (120–250ms latency) using Edge Impulse and C++/Arduino.}
+        \resumeItem{Designed dual-buffer architecture and PSRAM optimizations on ESP32-CAM to achieve 18 FPS live streaming and 5--6 FPS on-device inference.}
+        \resumeItem{Developed web frontends using Next.js, React, and Tailwind CSS for real-time bounding box overlays, detection logs, and balance dashboards.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineering Intern}{Nov. 2025 -- Dec. 2025}
+      {Dokuz Eylül University Computer Engineering Dept.}{Izmir, Turkey}
+      \resumeItemListStart
+        \resumeItem{Developed "Restock", a phygital self-checkout kiosk platform syncing physical store kiosks with mobile devices for real-time session handover.}
+        \resumeItem{Implemented atomic DB transactions using Drizzle ORM and SQLite alongside custom React hooks for hardware/browser barcode scanning.}
+        \resumeItem{Configured role-based auth (JWT) via Next.js Middleware and built administrative monitoring dashboards achieving 90+ Lighthouse scores.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Early Frost Detection} $|$ \emph{Go, Python, C, TensorFlow, Keras, NumPy, ESP-32}}{2024 -- 2025}
+          \resumeItemListStart
+            \resumeItem{Developed an AI-driven IoT solution to predict ice formation on refrigerator cooling fins for Arçelik.}
+            \resumeItem{Built a real-time web server and front-end monitoring platform using Go.}
+            \resumeItem{Designed and assembled a hardware refrigerator prototype for accurate experimental data collection.}
+            \resumeItem{Configured ESP-32 microcontrollers and DHT-22 sensors to collect environmental data over Wi-Fi.}
+            \resumeItem{Performed data preprocessing, feature engineering, and predictive model training.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Hand Gesture Detection} $|$ \emph{Python, TensorFlow, Keras, NumPy, OpenCV}}{2024}
+          \resumeItemListStart
+            \resumeItem{Constructed two computer vision models (a lightweight CNN and a ResNet-like architecture) to classify gestures via webcam.}
+            \resumeItem{Curated and preprocessed a custom dataset from scratch.}
+            \resumeItem{Implemented an efficient training pipeline utilizing Model Checkpoints to prevent data loss.}
+            \resumeItem{Integrated live webcam input with UX enhancements for real-time inference.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Game Platform \& Storefront} $|$ \emph{C\#, .NET Core, PostgreSQL}}{2023}
+          \resumeItemListStart
+            \resumeItem{Designed and implemented the complete database architecture for a digital game distribution platform.}
+            \resumeItem{Developed backend application logic to support user authentication, game publishing, and purchasing.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: TypeScript, JavaScript, Rust, Go, Python, C/C++, C\#, Java, SQL, Lua} \\
+     \textbf{Web \& Frameworks}{: Next.js, React, React Native, Astro, .NET Core, Tailwind CSS, shadcn/ui, REST APIs} \\
+     \textbf{Databases \& Backend}{: PostgreSQL, SQLite, Drizzle ORM, Auth (OAuth/JWT), Swagger / OpenAPI} \\
+     \textbf{AI, Vision \& Edge IoT}{: TensorFlow, Keras, TFLite, OpenCV, Edge Impulse, ESP32 / ESP32-CAM, PaddleOCR} \\
+     \textbf{DevOps \& Systems}{: Linux, Nix / NixOS, Docker, Kubernetes, Git, Intel Quartus Prime} \\
+     \textbf{Languages Spoken}{: Turkish (Native), English (Advanced - C1), German (Beginner - A1)}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
