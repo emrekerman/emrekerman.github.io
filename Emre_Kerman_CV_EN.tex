@@ -129,9 +129,7 @@
 
 
 \section{Summary}
-    I'm a computer engineer from İzmir, freshly graduated from Dokuz Eylül University, who loves linux and open-source software.
-
-Experienced in software development, machine learning, and embedded systems, with hands-on experience in IoT, computer vision, web technologies, both frontend and backend development. Always eager to learn new technologies and contributing.
+Computer Engineer from İzmir and recent Dokuz Eylül University graduate with experience in software development, machine learning, embedded systems, and full-stack web development. Experienced in building IoT and computer vision systems, developing frontend and backend applications, and working with Linux and open-source technologies.
 
 
 %-----------EDUCATION-----------
@@ -151,22 +149,23 @@ Experienced in software development, machine learning, and embedded systems, wit
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Software \& IoT Engineering Intern}{June 2025 -- Sept. 2025}
+      {Software Engineering Intern}{June 2025 -- Sept. 2025}
       {Indas Teknoloji Ticaret AŞ.}{Izmir, Turkey}
       \resumeItemListStart
-        \resumeItem{Engineered a smart parking platform with ESP32-CAM nodes and OCR (PaddleOCR/Tesseract) for automated entry tracking, billing, and balance management via Next.js REST APIs.}
-        \resumeItem{Built an edge-first PPE and human detection system running quantized FOMO models on ESP32-CAM (120–250ms latency) using Edge Impulse and C++/Arduino.}
-        \resumeItem{Designed dual-buffer architecture and PSRAM optimizations on ESP32-CAM to achieve 18 FPS live streaming and 5--6 FPS on-device inference.}
-        \resumeItem{Developed web frontends using Next.js, React, and Tailwind CSS for real-time bounding box overlays, detection logs, and balance dashboards.}
+        \resumeItem{Engineered a smart parking platform using ESP32-CAM nodes and OCR (PaddleOCR/Tesseract) for automated vehicle entry tracking, billing, and balance management via Next.js REST APIs.}
+        %\resumeItem{Built an edge-first PPE and human detection system using quantized FOMO models on ESP32-CAM, achieving 120--250ms inference latency with Edge Impulse and C++/Arduino.}
+        %\resumeItem{Designed dual-buffer architecture and PSRAM optimizations on ESP32-CAM to achieve 18 FPS live streaming and 5-6 FPS on-device inference.}
+        \resumeItem{Built an edge-first PPE and human detection system on ESP32-CAM using quantized FOMO models, C++/Arduino, and Edge Impulse, achieving 120--250ms inference latency, 18 FPS live streaming, and 5--6 FPS on-device inference through dual-buffering and PSRAM optimization.}
+        \resumeItem{Developed web frontends using Next.js and React for real-time bounding box overlays, detection logs, and balance dashboards.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Software Engineering Intern}{Nov. 2025 -- Dec. 2025}
       {Dokuz Eylül University Computer Engineering Dept.}{Izmir, Turkey}
       \resumeItemListStart
-        \resumeItem{Developed "Restock", a phygital self-checkout kiosk platform syncing physical store kiosks with mobile devices for real-time session handover.}
-        \resumeItem{Implemented atomic DB transactions using Drizzle ORM and SQLite alongside custom React hooks for hardware/browser barcode scanning.}
-        \resumeItem{Configured role-based auth (JWT) via Next.js Middleware and built administrative monitoring dashboards achieving 90+ Lighthouse scores.}
+        \resumeItem{Developed "Restock", a self-checkout platform integrating physical store kiosks with mobile devices for real-time session handover.}
+        \resumeItem{Implemented atomic DB transactions using Drizzle ORM and SQLite alongside custom React hooks for barcode scanning.}
+        \resumeItem{Configured role-based auth (JWT) via Next.js Middleware and built administrative monitoring dashboards.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -177,17 +176,21 @@ Experienced in software development, machine learning, and embedded systems, wit
       \resumeProjectHeading
           {\textbf{Early Frost Detection} $|$ \emph{Go, Python, C, TensorFlow, Keras, NumPy, ESP-32}}{2024 -- 2025}
           \resumeItemListStart
-            \resumeItem{Developed an AI-driven IoT solution to predict ice formation on refrigerator cooling fins for Arçelik.}
+            \resumeItem{Developed a machine learning-based IoT solution to predict ice formation on refrigerator cooling fins for an Arçelik use case.}
+            \resumeItem{Designed and assembled a hardware refrigerator prototype, integrating ESP32 microcontrollers and DHT22 sensors to collect environmental data over Wi-Fi.}
+            \resumeItem{Performed data preprocessing, feature engineering, and machine learning model training on the collected data.}
             \resumeItem{Built a real-time web server and front-end monitoring platform using Go.}
-            \resumeItem{Designed and assembled a hardware refrigerator prototype for accurate experimental data collection.}
-            \resumeItem{Configured ESP-32 microcontrollers and DHT-22 sensors to collect environmental data over Wi-Fi.}
-            \resumeItem{Performed data preprocessing, feature engineering, and predictive model training.}
+           % \resumeItem{Designed and assembled a hardware refrigerator prototype for experimental data collection.}
+           % \resumeItem{Configured ESP-32 microcontrollers and DHT-22 sensors to collect environmental data over Wi-Fi.}
+           % \resumeItem{Performed data preprocessing, feature engineering, and predictive model training.}
+           % \resumeItem{Collected environmental data using ESP32 and DHT22 sensors, and performed data preprocessing, feature engineering, and model training.}
+           % \resumeItem{Built a real-time monitoring platform with a Go web server and designed a hardware refrigerator prototype for experimental validation.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Hand Gesture Detection} $|$ \emph{Python, TensorFlow, Keras, NumPy, OpenCV}}{2024}
           \resumeItemListStart
             \resumeItem{Constructed two computer vision models (a lightweight CNN and a ResNet-like architecture) to classify gestures via webcam.}
-            \resumeItem{Curated and preprocessed a custom dataset from scratch.}
+            \resumeItem{Curated and preprocessed a custom hand-gesture dataset for model training.}
             \resumeItem{Implemented an efficient training pipeline utilizing Model Checkpoints to prevent data loss.}
             \resumeItem{Integrated live webcam input with UX enhancements for real-time inference.}
           \resumeItemListEnd
@@ -201,16 +204,15 @@ Experienced in software development, machine learning, and embedded systems, wit
 
 
 %-----------TECHNICAL SKILLS-----------
-%-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: TypeScript, JavaScript, Rust, Go, Python, C/C++, C\#, Java, SQL, Lua} \\
-     \textbf{Web \& Frameworks}{: Next.js, React, React Native, Astro, .NET Core, Tailwind CSS, shadcn/ui, REST APIs} \\
-     \textbf{Databases \& Backend}{: PostgreSQL, SQLite, Drizzle ORM, Auth (OAuth/JWT), Swagger / OpenAPI} \\
-     \textbf{AI, Vision \& Edge IoT}{: TensorFlow, Keras, TFLite, OpenCV, Edge Impulse, ESP32 / ESP32-CAM, PaddleOCR} \\
-     \textbf{DevOps \& Systems}{: Linux, Nix / NixOS, Docker, Kubernetes, Git, Intel Quartus Prime} \\
-     \textbf{Languages Spoken}{: Turkish (Native), English (Advanced - C1), German (Beginner - A1)}
+     \textbf{Languages}{: TypeScript, JavaScript, Python, C/C++, Go, C\#, SQL, Rust} \\
+\textbf{Web}{: Next.js, React, React Native, Astro, Tailwind CSS, REST APIs} \\
+\textbf{Backend \& Databases}{: PostgreSQL, SQLite, Drizzle ORM, .NET Core, OAuth/JWT, Swagger/OpenAPI} \\
+\textbf{AI, Vision \& Edge}{: TensorFlow, Keras, TFLite, OpenCV, Edge Impulse, ESP32/ESP32-CAM, PaddleOCR} \\
+\textbf{Systems \& DevOps}{: Linux, Docker, Kubernetes, Git, Nix/NixOS} \\
+\textbf{Spoken Languages}{: Turkish (Native), English (C1), German (A1)}
     }}
  \end{itemize}
 
